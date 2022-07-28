@@ -57,9 +57,7 @@ public class VerifyUserCanAddNewAddress {
 	public void verifyUserCanGoToProfilePage()
 	{
 		hp.moveToProfileName();
-		
 		hp.clickOnProfileText();
-		
 		hp.moveMouse(driver);
 		pp = new ProfilePage(driver);
 		Assert.assertTrue(pp.getFullProfileName());
